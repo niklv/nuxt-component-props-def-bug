@@ -14,7 +14,6 @@ type ComponentProps<T> = T extends ComponentOptionsBase<infer P, // Props
 
 type CompAProps = ComponentProps<typeof ComponentA>
 
-
 const someConfig:CompAProps = {
     // @ts-expect-error
     notExistedProp: true // should be error
